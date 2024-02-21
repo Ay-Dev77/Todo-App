@@ -1,0 +1,114 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  align-content: center;
+}
+.titre {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 50px;
+}
+.app {
+  align-items: center;
+}
+.creator {
+  margin: auto;
+  margin-bottom: 50px;
+  height: 250px;
+  width: 600px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+.name {
+  height: 36px;
+  width: 300px;
+  border-color: black;
+  border: solid;
+  border-radius: 10px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  box-shadow: inset 30px 30px 60px #d9d9d9, inset -30px -30px 60px #ffffff;
+}
+.name:focus {
+  outline: none;
+  border-width: 2px;
+}
+.create-button {
+  height: 36px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: opacity 0.15s;
+  display: block;
+  box-shadow: 4px 4px 7px #d9d9d9, -4px -4px 7px #ffffff;
+}
+.create-button:hover {
+  border: none;
+  opacity: 0.8;
+}
+.create-button:active {
+  opacity: 0.5;
+}
+.card-task {
+  height: 100px;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 40px 40px 80px #d9d9d9, -40px -40px 80px #ffffff;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+.card-title {
+  margin-left: 70px;
+}
+.delete-button {
+  height: 36px;
+  width: 70px;
+  background-color: rgb(255, 44, 44);
+  color: black;
+  border: none;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  box-shadow: 4px 4px 7px #d9d9d9, -4px -4px 7px #ffffff;
+}
+.delete-button:hover {
+  border: none;
+  opacity: 0.8;
+}
+.delete-button:active {
+  opacity: 0.5;
+}
+
+@media (max-width: 650px) {
+  .creator {
+    width: 400px;
+  }
+  .name {
+    width: 250px;
+  }
+  .card-task {
+    width: 300px;
+  }
+}
+@media (max-width: 450px) {
+  .creator {
+    width: 300px;
+  }
+  .name {
+    width: 150px;
+  }
+}
